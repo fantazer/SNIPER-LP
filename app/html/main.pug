@@ -1,0 +1,246 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.main-section(style="background-image:url('img/bg-mainsection.png')")
+			.header-wrap
+				.main-cont
+					.header
+						a(href="/").logo
+							img(src="img/logo.png", alt="")
+						a(href="tel:8 000 000 00 00").header__phone
+							+icon("call","icon")
+							span 8 000 000 00 00
+						.soc-row.soc-row--white
+							a(href="#").soc-row__el
+								+icon("soc-telegram","icon")
+							a(href="#").soc-row__el
+								+icon("soc-whatsapp","icon")
+						a(href="#").btn--md.btn--yellow Получить консультацию
+			.main-cont
+				.slogan
+					.slogan__title Скидка до 35000 тысяч рублей ежемесячно
+					.slogan__text на комплексное продвижение.
+		.section-work(style="background-image:url('img/bg-triangle.png')")
+			.main-cont
+				.work-head
+					.work-head__title Работаем по технологии комплексного продвижения craft MARKETING
+					.work-head__get
+						.soc-row
+							a(href="#").soc-row__el
+								+icon("soc-telegram","icon")
+							a(href="#").soc-row__el
+								+icon("soc-whatsapp","icon")
+						.btn--md.btn--mark Онлайн консультация
+				.work-cont
+					.work-cont__info Знаем текущую потребность бизнеса, разработаем стратегию для достижения результата.
+				.work-advant
+					.work-advant__el
+						+icon("money","icon")
+						.work-advant__el-info
+							b Меньше
+							span тратьте
+					.work-advant__el
+						+icon("grow","icon")
+						.work-advant__el-info
+							b Больше
+							span зарабатывайте
+					.work-advant__el
+						+icon("map","icon")
+						.work-advant__el-info
+							b Масштабируйте
+							span свой бизнес
+		.section-process
+			.main-cont
+				.process-head
+					.process__title Как мы работаем
+					.process-get
+						.btn--md.btn--mark Хочу стратегию
+						.soc-row
+							a(href="#").soc-row__el
+								+icon("soc-telegram","icon")
+							a(href="#").soc-row__el
+								+icon("soc-whatsapp","icon")
+				.process-img
+					img(src="img/arrow-number.png", alt="")
+				.process
+					.process__col
+						.process__col-title Разработка стратегии
+						.process__col-info
+							ul
+								li Определение целей и задач
+								li Оценка рынка и конкурентов
+								li Оценка интеграций
+								li Аудит контекстной рекламы, SEO, SMM, репутации
+								li Веб‑аналитика - метрики, цели, юзабилити
+					.process__col
+						.process__col-title Горячий и отложенный спрос
+						.process__col-info
+							ul
+								li Контекстная реклама
+								li Таргетированная реклама
+								li Таргетированная реклама в социальных сетях
+								li Яндекс.Маркет и Google Покупки
+								li Поисковое продвижение
+								li Smart targeting - пол, возраст, ГЕО, доход, интерес
+					.process__col
+						.process__col-title Принятие решения о покупке
+						.process__col-info
+							ul
+								li Ретаргетинг
+								li Ремаркетинг
+								li Управление репутацией
+								li Интернет Брендинг
+								li Наличие и доставка
+								li Онлайн оплата
+					.process__col
+						.process__col-title Повторные покупки
+						.process__col-info
+							ul
+								li Ведение соц.сетей
+								li СМС рассылка
+								li CRM маркетинг
+					.process__col
+						.process__col-title Отдел продаж
+						.process__col-info
+							ul
+								li Ведение соц.сетей
+								li СМС рассылка
+								li CRM маркетинг
+	.section.section--gray
+		.main-cont
+			.section-title Технологии
+			.grid
+				- for (var i=0;i<4;i++)
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-1.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-2.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-3.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-4.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-5.jpg')")
+	.section
+		.main-cont
+			.section-title Комплексы сопровождения
+			.cost
+				.cost__col
+					.cost__col-head
+						.cost__col-head-bg(style="background-image:url('img/cost-bg-1.png')")
+						.cost__col-title-false 50 000 <span>руб.</span>
+						.cost__col-title-true 35 000 <span>руб.</span>
+					.cost-info
+						.cost-list
+							.cost-list__el Стратегия и аналитика
+							.cost-list__el Контекстная реклама
+							.cost-list__el Базовая SEO оптимизация
+							.cost-list__el Таргет. соц. сети
+							.cost-list__el Ведение соц. сетей
+							.cost-list__el Тех. поддержка
+						.cost-get
+							.btn--md.btn--mark.btn--full Заказать
+				.cost__col
+					.cost__col-head
+						.cost__col-head-bg(style="background-image:url('img/cost-bg-2.png')")
+						.cost__col-title-false 80 000 <span>руб.</span>
+						.cost__col-title-true 56 000 <span>руб.</span>
+					.cost-info
+						.cost-list
+							.cost-list__el Стратегия и аналитика
+							.cost-list__el Контекстная реклама
+							.cost-list__el SEO продвижение
+							.cost-list__el Таргет. Соц. сети
+							.cost-list__el Ведение соц. сетей
+							.cost-list__el Коллтрекинг, CRM,
+							.cost-list__el Удаление негативных
+							.cost-list__el отзывов
+							.cost-list__el Тех. поддержка
+							.cost-list__el Тех. поддержка
+						.cost-get
+							.btn--md.btn--mark.btn--full Заказать
+				.cost__col
+					.cost__col-head
+						.cost__col-head-bg(style="background-image:url('img/cost-bg-3.png')")
+						.cost__col-title-false 120 000 <span>руб.</span>
+						.cost__col-title-true 85 000 <span>руб.</span>
+					.cost-info
+						.cost-list
+							.cost-list__el Стратегия и аналитика
+							.cost-list__el Контекстная реклама
+							.cost-list__el SEO продвижение
+							.cost-list__el Таргет. Соц. сети
+							.cost-list__el Ведение соц сетей
+							.cost-list__el Ретаргетинг
+							.cost-list__el Ремаркетинг
+							.cost-list__el Интернет Брендинг
+							.cost-list__el Управление репутацией
+							.cost-list__el Коллтрекинг
+							.cost-list__el CRM маркетинг
+							.cost-list__el СМС рассылка
+							.cost-list__el Наличие и доставка
+							.cost-list__el Онлайн оплата
+							.cost-list__el Тайный покупатель
+							.cost-list__el Тех. поддержка
+						.cost-get
+							.btn--md.btn--mark.btn--full Заказать
+	.section.section--gray
+		.main-cont
+			.section-title Разработка HCR (High Conversion Rate)
+			.develop
+				.develop__el
+					.develop__el-title Интернет магазинов
+					img(src="img/develop-1.svg", alt="").develop__el-img
+				.develop__el
+					.develop__el-title Посадочных страниц
+					img(src="img/develop-2.svg", alt="").develop__el-img
+				.develop__el
+					.develop__el-title Лэндингов
+					img(src="img/develop-3.svg", alt="").develop__el-img
+			.develop-img(style="background-image:url('img/develop-banner.jpg')")
+			.btn-row-mid
+				.btn--lg.btn--mark Узнать стоимость
+	.section
+		.main-cont
+			.section-title Нам доверяют
+			.grid.grid--mark
+				- for (var i=0;i<4;i++)
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-1.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-2.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-3.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-4.jpg')")
+					.grid__el
+						.grid__el-img(style="background-image:url('img/tech-5.jpg')")
+	.section-marketing(style="background-image:url('img/marketing-bg.png')")
+		.main-cont
+			.marketing-wrap
+				.marketing-title Чек-лист для самостоятельной маркетинг-ревизии
+				.marketing-text Как самостоятельно провести базовую <br> маркетинг-ревизию вашего бизнеса?
+				.btn--xl.btn--mark.btn--shadow Скачать
+	.footer
+		.main-cont
+			.footer-wrap
+				a(href="#").footer-logo
+					img(src="img/logo-color.png", alt="")
+				.footer-info
+					.footer-title Наши контакты
+					.footer-descr <strong><a href="tel:8 000 000 00 00">8 000 000 00 00</a></strong> - Позвонить, узнать как дела.
+					.footer-descr <strong>г.Новосибирск, ул. Челюскинцев, 36/1, оф. 501</strong> - - Приехать и познакомиться.
+					.footer-descr <strong>Email:</strong> - <b><a href="mailto:example@gmail.com">example@gmail.com</a></b>.
+				.soc-row
+					a(href="#").soc-row__el
+						+icon("soc-telegram","icon")
+					a(href="#").soc-row__el
+						+icon("soc-whatsapp","icon")
+
+
+
+	+footer()
+include ./block_html/_script.pug
