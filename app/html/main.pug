@@ -18,11 +18,15 @@ include block_html/_include.pug
 								+icon("soc-telegram","icon")
 							a(href="#").soc-row__el
 								+icon("soc-whatsapp","icon")
-						a(href="#").btn--md.btn--yellow Получить консультацию
-			.main-cont
-				.slogan
-					.slogan__title Скидка до 35000 тысяч рублей ежемесячно
-					.slogan__text на комплексное продвижение.
+						div(data-modal="order").modal-get.btn--md.btn--yellow.header-get Получить консультацию
+			.main-cont.main-cont--full
+				.slogan-wrap
+					.slogan
+						.slogan__title Скидка до
+							.slogan__title-cost 35000<span>рублей </span>
+							| ежемесячно
+						.slogan__text на комплексное продвижение.
+						div(data-modal="order").modal-get.btn--md.btn--yellow.slogan__btn Получить консультацию
 		.section-work(style="background-image:url('img/bg-triangle.png')")
 			.main-cont
 				.work-head
@@ -33,7 +37,7 @@ include block_html/_include.pug
 								+icon("soc-telegram","icon")
 							a(href="#").soc-row__el
 								+icon("soc-whatsapp","icon")
-						.btn--md.btn--mark Онлайн консультация
+						div(data-modal="order").modal-get.btn--md.btn--mark.btn--mobile Онлайн консультация
 				.work-cont
 					.work-cont__info Знаем текущую потребность бизнеса, разработаем стратегию для достижения результата.
 				.work-advant
@@ -57,7 +61,7 @@ include block_html/_include.pug
 				.process-head
 					.process__title Как мы работаем
 					.process-get
-						.btn--md.btn--mark Хочу стратегию
+						div(data-modal="order").modal-get.btn--md.btn--mark.btn--mobile Хочу стратегию
 						.soc-row
 							a(href="#").soc-row__el
 								+icon("soc-telegram","icon")
@@ -67,7 +71,10 @@ include block_html/_include.pug
 					img(src="img/arrow-number.png", alt="")
 				.process
 					.process__col
-						.process__col-title Разработка стратегии
+						.process__col-title 
+							.process__col-title-numb
+								img(src="img/number-1.png", alt="")
+							.process__col-title-text Разработка стратегии
 						.process__col-info
 							ul
 								li Определение целей и задач
@@ -76,7 +83,10 @@ include block_html/_include.pug
 								li Аудит контекстной рекламы, SEO, SMM, репутации
 								li Веб‑аналитика - метрики, цели, юзабилити
 					.process__col
-						.process__col-title Горячий и отложенный спрос
+						.process__col-title
+							.process__col-title-numb
+								img(src="img/number-2.png", alt="")
+							.process__col-title-text Горячий и отложенный спрос
 						.process__col-info
 							ul
 								li Контекстная реклама
@@ -86,7 +96,10 @@ include block_html/_include.pug
 								li Поисковое продвижение
 								li Smart targeting - пол, возраст, ГЕО, доход, интерес
 					.process__col
-						.process__col-title Принятие решения о покупке
+						.process__col-title
+							.process__col-title-numb
+								img(src="img/number-3.png", alt="")
+							.process__col-title-text Принятие решения о покупке
 						.process__col-info
 							ul
 								li Ретаргетинг
@@ -96,14 +109,20 @@ include block_html/_include.pug
 								li Наличие и доставка
 								li Онлайн оплата
 					.process__col
-						.process__col-title Повторные покупки
+						.process__col-title
+							.process__col-title-numb
+								img(src="img/number-4.png", alt="")
+							.process__col-title-text Повторные покупки
 						.process__col-info
 							ul
 								li Ведение соц.сетей
 								li СМС рассылка
 								li CRM маркетинг
 					.process__col
-						.process__col-title Отдел продаж
+						.process__col-title
+							.process__col-title-numb
+								img(src="img/number-5.png", alt="")
+							.process__col-title-text Отдел продаж
 						.process__col-info
 							ul
 								li Ведение соц.сетей
@@ -124,7 +143,7 @@ include block_html/_include.pug
 						.grid__el-img(style="background-image:url('img/tech-4.jpg')")
 					.grid__el
 						.grid__el-img(style="background-image:url('img/tech-5.jpg')")
-	.section
+	.section.section-cost
 		.main-cont
 			.section-title Комплексы сопровождения
 			.cost
@@ -142,7 +161,7 @@ include block_html/_include.pug
 							.cost-list__el Ведение соц. сетей
 							.cost-list__el Тех. поддержка
 						.cost-get
-							.btn--md.btn--mark.btn--full Заказать
+							div(data-modal="order").modal-get.btn--md.btn--mark.btn--full Заказать
 				.cost__col
 					.cost__col-head
 						.cost__col-head-bg(style="background-image:url('img/cost-bg-2.png')")
@@ -161,7 +180,7 @@ include block_html/_include.pug
 							.cost-list__el Тех. поддержка
 							.cost-list__el Тех. поддержка
 						.cost-get
-							.btn--md.btn--mark.btn--full Заказать
+							div(data-modal="order").modal-get.btn--md.btn--mark.btn--full Заказать
 				.cost__col
 					.cost__col-head
 						.cost__col-head-bg(style="background-image:url('img/cost-bg-3.png')")
@@ -186,7 +205,7 @@ include block_html/_include.pug
 							.cost-list__el Тайный покупатель
 							.cost-list__el Тех. поддержка
 						.cost-get
-							.btn--md.btn--mark.btn--full Заказать
+							div(data-modal="order").modal-get.btn--md.btn--mark.btn--full Заказать
 	.section.section--gray
 		.main-cont
 			.section-title Разработка HCR (High Conversion Rate)
@@ -202,7 +221,7 @@ include block_html/_include.pug
 					img(src="img/develop-3.svg", alt="").develop__el-img
 			.develop-img(style="background-image:url('img/develop-banner.jpg')")
 			.btn-row-mid
-				.btn--lg.btn--mark Узнать стоимость
+				div(data-modal="order").modal-get.btn--lg.btn--mark.btn--mobile Узнать стоимость
 	.section
 		.main-cont
 			.section-title Нам доверяют
@@ -218,21 +237,82 @@ include block_html/_include.pug
 						.grid__el-img(style="background-image:url('img/tech-4.jpg')")
 					.grid__el
 						.grid__el-img(style="background-image:url('img/tech-5.jpg')")
+
+	.section.section--gray
+		.main-cont
+			.section-title Кейсы
+			.slider-wrap.slider-wrap--simple
+				.slider-control.slider-control--left
+					+icon("arrow-conner-left","icon")
+				.slider-control.slider-control--right
+					+icon("arrow-conner-right","icon")
+				.slider-item
+					- for (var i=0;i<5;i++)
+						.slider-el-wrap
+							.slider-el
+								.option
+									.option__header(style="background-image:url('img/triange-bg.png')")
+										.option__img
+											img(src="img/option-1.png", alt="")
+										.option__title Компания по продаже женского белья для беременных и кормящих мам
+									.option-wrap
+										.option-col
+											.option-col-head
+												.option-col__title Инструменты
+													+icon("plus","icon")
+											.option-descr
+												.list
+													.list__el SEO
+													.list__el  Яндекс.Директ
+													.list__el  Google Ads
+													.list__el  SMM
+													.list__el  МойСклад
+													.list__el  СДЭК
+										.option-col
+											.option-col-head
+												.option-col__title Ниша
+													+icon("plus","icon")
+											.option-descr
+												.list
+													p Женское нижнее белье
+										.option-col
+											.option-col-head
+												.option-col__title Что сделали
+													+icon("plus","icon")
+											.option-descr
+												.list
+													.list__el Разработали интернет-магазин
+													.list__el Запустили комплексное продвижение
+										.option-col
+											.option-col-head
+												.option-col__title Что сделали
+													+icon("plus","icon")
+											.option-descr
+												.list
+													.list__el Разработали интернет-магазин
+													.list__el Запустили комплексное продвижение
+													.list__el <b>Стоимость лида:</b> 300 рублей.
+													.list__el <b>Колличество привлеченных лидов:</b> +627
+													.list__el <b>Колличество лидов в месяц:</b> +105
+									.option-footer Разработали интернет-магазин, запустили <br> комплексное продвижение, снизили стоимость лида до 300 РУБ.
+
+			.btn-row-mid
+				div(data-modal="order").modal-get.btn--lg.btn--yellow.btn--mobile Хочу так же
 	.section-marketing(style="background-image:url('img/marketing-bg.png')")
 		.main-cont
 			.marketing-wrap
 				.marketing-title Чек-лист для самостоятельной маркетинг-ревизии
 				.marketing-text Как самостоятельно провести базовую <br> маркетинг-ревизию вашего бизнеса?
-				.btn--xl.btn--mark.btn--shadow Скачать
+				div(data-modal="download").modal-get.btn--xl.btn--mark.btn--shadow.btn--mobile Скачать
 	.footer
 		.main-cont
 			.footer-wrap
-				a(href="#").footer-logo
+				div(data-modal="true").modal-get.footer-logo
 					img(src="img/logo-color.png", alt="")
 				.footer-info
 					.footer-title Наши контакты
 					.footer-descr <strong><a href="tel:8 000 000 00 00">8 000 000 00 00</a></strong> - Позвонить, узнать как дела.
-					.footer-descr <strong>г.Новосибирск, ул. Челюскинцев, 36/1, оф. 501</strong> - - Приехать и познакомиться.
+					.footer-descr <strong>г.Новосибирск, ул. Челюскинцев, 36/1, оф. 501</strong> - Приехать и познакомиться.
 					.footer-descr <strong>Email:</strong> - <b><a href="mailto:example@gmail.com">example@gmail.com</a></b>.
 				.soc-row
 					a(href="#").soc-row__el
@@ -240,7 +320,61 @@ include block_html/_include.pug
 					a(href="#").soc-row__el
 						+icon("soc-whatsapp","icon")
 
+	.modal-layer
+		.modal-filter
+		.modal-wrap
+			.modal(data-modal="order")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-title Оставьте заявку
+					//.modal-text Обращаетесь к нам впервые? Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+					form.validate-form( action="javascript:void(null);")
+						.input-cont
+							.input-row
+								.input-row__title
+								input(type="text" placeholder="Ваше имя" class="input")
+						.input-cont
+							.input-row
+								.input-row__title
+								input(type="text" placeholder="Телефон" class="input")
+						.login-remember
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox").style-input
+									.style-input-element
+										+icon("checked","icon")
+									.style-input-text Я ознакомился с и даю согласие на обработку моих персональных данных
+						input(type="submit" value="Отправить").modal-send
+			.modal(data-modal="download")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-title Хочу чек-лист
+					.modal-text Оставьте Ваш email и мы пришлем Вам чек-лист для самостоятельной маркетинг-ревизии
+					form.validate-form( action="javascript:void(null);")
+						.input-cont
+							.input-row
+								.input-row__title
+								input(type="text" placeholder="Ваша почта" class="input")
+						.login-remember
+							.check-el
+								label.style-label.style-label--checkbox
+									input(type="checkbox").style-input
+									.style-input-element
+										+icon("checked","icon")
+									.style-input-text Я ознакомился с и даю согласие на обработку моих персональных данных
+						input(type="submit" value="Отправить").modal-send
 
+			//success message
+			.modal(data-modal="true")
+				.modal-content.modal-content--true
+					.modal-close
+						+icon("close-fat","icon")
+					.modal-img
+						img(src="img/target.svg", alt="")
+					.modal-title Сообщение отправленно
+					.modal-text Спасибо Вам. Мы свяжемся с Вами в ближайшее время
 
 	+footer()
 include ./block_html/_script.pug

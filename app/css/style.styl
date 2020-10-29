@@ -15,9 +15,12 @@ body
 	color $main-text-color
 	line-height 1.2
 	letter-spacing 0.01em
-
+	//transition padding .2s
 .main-cont
 	center(1200px,10px)
+
+.main-cont--full
+	height: 100%
 
 .page
 	f()
@@ -39,7 +42,7 @@ body
 		transform: translate3d(0, 0, 0)
 
 .shrink
-	position fixed
+	position fixed!important
 	top 0
 	left 0
 	background $red
@@ -48,6 +51,9 @@ body
 	animation:  slideInDown  1s 1 ease-in-out;
 	z-index 100
 	.header
+		+below(640px)
+			.btn--md
+				display none
 		padding: 8px 0
 // animate top menu === end
 
@@ -114,7 +120,7 @@ body
 	position: absolute
 	opacity 0
 	transition transform .6s, opacity .8s
-	max-width 400px
+	max-width 450px
 	left -9999px
 	top -9999px
 	.order__row
@@ -124,7 +130,7 @@ body
 .modal-content
 	+below(640px)
 		height: 100%
-		padding: 20px
+		padding: 60px 20px 40px 20px
 		overflow-y scroll
 		width: 95%!important
 		margin: 20px auto
@@ -189,26 +195,31 @@ body
 
 .modal-title
 	+below(768px)
-		font-size: 20px
+		font-size: 26px
 	margin-bottom: 20px
 	text-align: center
-	@extend .type--xl
+	@extend .type--lgx
 	font-weight: 700
 
 .modal-text
 	+below(768px)
 		width: 100%
-		font-size: 12px
 	text-align: center
-	margin: 20px auto
+	margin: 10px auto
+	font-size: 14px
 	//width: 80%
 	line-height: 1.6
 
 
 .modal-send
 	@extend .btn--md
-	@extend .btn--mark
+	@extend .btn--yellow
 	width: 100%
+
+.modal-img
+	max-width 150px
+	margin: 0 auto 20px auto
+
 // modal === end
 
 // cookie
@@ -339,18 +350,51 @@ body
 	bg-full()
 
 .header
+	+below(480px)
+		fw()
 	padding: 20px 0
 	f()
 	align-items center
+	.soc-row
+		+below(480px)
+			margin-right: 0
+			.soc-row__el
+				&:last-child
+					margin-right: 0
+		margin-right: 20px
+	.btn--md
+		+below(640px)
+			margin-top: 20px
+			width: 100%
+.logo
+	+below(480px)
+		width: 100px
+
+.header-get
+	+below(640px)
+		display none
 
 .header__phone
+	+below(960px)
+		margin-right: 0
+		span
+			display none
+
 	f()
 	align-items center
 	margin-right: 40px
 	.icon
+		+below(480px)
+			size 20px
 		size 32px
 		margin-right: 20px
 		fill white
+		animation: shake 4s cubic-bezier(.36,.07,.19,.97) both
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px
+		animation-iteration-count: infinite
+		animation-delay: 3s
 	margin-left auto
 	@extend .type--lg
 	font-weight: 700
@@ -358,6 +402,8 @@ body
 .soc-row
 	f()
 .soc-row__el
+	+below(480px)
+		size 32px
 	round()
 	flex(mid)
 	tr(all)
@@ -365,6 +411,8 @@ body
 	size 42px
 	border 2px solid #8f0001
 	.icon
+		+below(480px)
+			size 14px
 		size 20px
 		fill #8f0001
 .soc-row--white
@@ -380,36 +428,87 @@ body
 
 .slogan
 	color white
-	margin-top: 15%
+	margin-top: -10%
 	max-width 700px
+	width: 100%
+.slogan-wrap
+	height: 100%
+	f()
+	fl()
+	justify-content: center
+	margin-top: 2%
 .slogan__title
 	font-weight: 700
 	@extend .type--xl
 	margin-bottom: 20px
+
+.slogan__title-cost
+	+below(768px)
+		font-size: 15vw
+	font-size: 148px
+	color $yellow
+	span
+		+below(640px)
+			font-size: 24px
+		font-size: 32px
+
 .slogan__text
 	@extend .type--lg
 
+.slogan__btn
+	+above(641px)
+		display none
+	width: 100%
+	margin-top: 20px
+
 .section-work
+	+below(768px)
+		padding: 40px 0
 	bg-full()
 	padding: 100px 0
 .work-head
+	+below(768px)
+		fw()
 	f()
 	align-items: flex-start
 	justify-content space-between
 
 .work-head__title
+	+below(1024px)
+		max-width auto
+		width: 60%
+		font-size: 42px
+	+below(768px)
+		width: 100%
+		margin-bottom: 20px
+	+below(640px)
+		font-size: 32px
 	font-weight: 700
 	@extend .type--xl
 	max-width 680px
 
 .work-head__get
+	+below(640px)
+		fw()
+		width: 100%
+		.btn--md
+			width: 100%
+			margin: 20px 0
+			border 1px solid $border-color
 	f()
 	align-items center
 
 .work-cont
+	+below(640px)
+		margin: 20px 0
 	f()
 	margin: 100px 0
 .work-cont__info
+	+below(768px)
+		max-width auto
+		width: 60%
+	+below(640px)
+		width: 100%
 	@extend .type--lgx
 	color white
 	max-width 600px
@@ -421,20 +520,29 @@ body
 	justify-content: space-around
 
 .work-advant__el
+	+below(640px)
+		width: 32%
 	flex(mid)
 	fl()
 	width: 30%
 	.icon
+		+below(640px)
+			size 48px
+			margin-bottom: 10px
 		fill white
 		size 72px
 		margin-bottom: 20px
 .work-advant__el-info
+	+below(640px)
+		font-size: 12px
 	flex(mid)
 	fl()
 	color white
 	@extend .type--lg
 
 .section-process
+	+below(768px)
+		padding: 40px 0
 	padding: 100px 0
 
 .process__title
@@ -451,39 +559,78 @@ body
 	f()
 	align-items center
 	.btn--md
+		+below(640px)
+			padding: 15px 20px
 		margin-right: 20px
 
 .process-img
+	+below(740px)
+		display none
 	margin-top: -10%
 
 .process
+	+below(740px)
+		fw()
+		padding: 20px 0 0 0
+
 	f()
 	padding: 20px 0
 	justify-content space-between
 .process__col
+	+below(768px)
+		width: 22%
+		padding: 0 10px
+	+below(740px)
+		width: 48%
+	+below(480px)
+		width: 100%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
 	width: 16%
 	ul
 		padding-left: 20px
 		li
 			margin-bottom: 10px
 			font-weight: 500
+			line-height: 1.4
 .process__col-title
+	+below(740px)
+		align-items center
 	font-weight: 700
 	@extend .type--md
 	line-height: 1.6
+	f()
+.process__col-title-numb
+	+above(741px)
+		display none
+	width: 40px
+	margin-right: 20px
+.process__col-title-text
+	+below(740px)
+		width calc(100% - 60px)
+		font-size: 18px
+
 
 .section
+	+below(768px)
+		padding: 40px 0
 	padding: 100px 0
 
 .section--gray
 	background: #f8f8f8
 
 .section-title
+	+below(768px)
+		margin-bottom: 40px
 	text-align center
 	font-weight: 700
 	@extend .type--xl
 	margin-bottom: 80px
 .grid
+	+below(640px)
+		grid-template-columns: repeat(auto-fill, minmax(6rem,1fr))
+		grid-gap 10px
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(5, 1fr)
@@ -492,7 +639,10 @@ body
 	.grid__el
 		border 1px solid $border-color
 .grid__el
+	+below(640px)
+		padding: 15px
 	padding: 20px
+	background: white
 .grid__el-img
 	bg-full()
 	padding: 10% 5%
@@ -500,21 +650,36 @@ body
 	background-size: contain
 
 .cost
+	+below(740px)
+		fl()
+		align-items center
 	flex(between)
 	align-items: flex-start
 .cost__col
+	+below(1024px)
+		width: 31%
+	+below(740px)
+		margin-top: 0 !important
+		margin-bottom: 30px
+		width: 300px
 	br(10px)
 	box-shadow 0 0 51px rgba(0, 0, 0, 0.16)
 	width: 28%
 	&:nth-child(1)
 		margin-top: 200px
 		.cost__col-head
+			+below(1024px)
+				padding-bottom:40%
+			+below(740px)
+				padding-bottom:45%
 			padding-bottom: 140px
 		.cost__col-head-bg
 			width calc(100% + 25px)
 			background-position top
 	&:nth-child(2)
 		.cost__col-head
+			+below(1024px)
+				padding-bottom:30%
 			padding-bottom: 100px
 		.cost__col-head-bg
 			width calc(100% + 5px)
@@ -522,6 +687,8 @@ body
 	&:nth-child(3)
 		margin-top: 100px
 		.cost__col-head
+			+below(1024px)
+				padding-bottom:30%
 			padding-bottom: 100px
 		.cost__col-head-bg
 			width calc(100% + 17px)
@@ -563,6 +730,8 @@ body
 		background: white
 		transform rotate(-3deg)
 .cost__col-title-true
+	+below(1024px)
+		font-size: 32px
 	@extend .type--xl
 	font-weight: 700
 	position relative
@@ -585,23 +754,41 @@ body
 		left -5px
 		top 2px
 
+.section-cost
+	overflow hidden
+
 .develop
+	+below(640px)
+		fl()
+		flex(mid)
 	f()
 	justify-content space-between
 	align-items: flex-start
 	margin-bottom: 60px
 .develop__el
+	+below(640px)
+		width: 100%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
 	width: 28%
 	flex(mid)
 	fl()
 .develop__el-title
+	+below(768px)
+		font-size: 24px
+	text-align center
 	font-weight: 700
 	@extend .type--lg
 	margin-bottom: 20px
 .develop__el-img
+	+below(640px)
+		max-width: 200px
 	width: 80%
 
 .develop-img
+	+below(768px)
+		margin-bottom: 30px
 	padding: 30% 10%
 	bg-full()
 	br(10px)
@@ -641,7 +828,232 @@ body
 	margin-bottom: 30px
 
 .footer-descr
+	+below(640px)
+		font-size: 16px
+		padding 0 30px
+		line-height: 1.6
 	@extend .type--md
 	margin-bottom: 15px
+	line-height: 1.4
 	strong
+		+below(640px)
+			font-size: 16px
+			width: 100%
+			display block
 		font-size: 22px
+
+.option
+	br(20px)
+	overflow hidden
+	background: white
+.header-wrap
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	z-index 100
+.option__header
+	+below(640px)
+		padding 50px 0 20px 0
+		background-size: cover
+	bg-full()
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: top center
+
+	padding 80px 0 40px 0
+	flex(mid)
+	fl()
+.option__img
+	+below(640px)
+		width: 80%
+		margin 0 auto 20px auto
+	margin-bottom: 20px
+.option__title
+	text-align center
+	max-width 400px
+	@extend .type--md
+	font-weight: 700
+	line-height: 1.4
+.option-wrap
+	+below(740px)
+		fw()
+	f()
+.option-col
+	+below(740px)
+		width: 100%
+	width: 25%
+	border-right 1px solid $border-color
+.option-col-head
+	padding: 10px
+	text-align center
+	flex(mid)
+	border-top 1px solid $border-color
+	border-bottom 1px solid $border-color
+.option-col-head.active
+	.icon
+		transform rotate(45deg)
+.option-col__title
+	f()
+	font-weight: 700
+	@extend .type--lg
+	align-items center
+	.icon
+		+above(740px)
+			display none
+		tr()
+		size 14px
+		margin-left: 10px
+		fill $red
+.option-descr
+	+below(740px)
+		display none
+	padding: 20px 30px
+	p
+		margin-top: 0
+		&:last-child
+			margin-bottom: 0
+.list__el
+	margin-bottom: 10px
+	line-height: 1.4
+	position relative
+	padding-left: 10px
+	&:before
+		content ''
+		position absolute
+		size 6px
+		round()
+		left -6px
+		top 8px
+		background: $red
+.option-footer
+	+below(640px)
+		padding: 20px
+		font-size: 14px
+		font-weight: 400
+		br
+			display none
+	padding: 20px
+	border-top 1px solid $border-color
+	text-align center
+	font-weight: 700
+	flex(mid)
+	@extend .type--lg
+
+
+// slick
+.slick-slide
+	&:hover
+		outline none!important
+	&:active
+		outline none!important
+	&:focus
+		outline none!important
+
+// === for custom navigation ===
+.slider-wrap
+	position relative
+
+//Навигация снаружи
+.slider-wrap--simple
+	.slider-control
+		+below(1400px)
+			display none
+		br(4px)
+		flex(mid)
+		tr(all)
+		size 60px
+		position: absolute
+		top 50%
+		margin-top: -20px
+		z-index 10
+		cp()
+		background: #a00006
+		&:hover
+			background: $red
+			.icon
+				fill white
+		.icon
+			size 24px
+			fill white
+	.slider-control--left
+		left -80px
+	.slider-control--right
+		right -80px
+.slider-wrap--inarrow
+	.slider-control
+		flex(mid)
+		tr(all)
+		position: absolute
+		top 50%
+		margin-top: -20px
+		z-index 10
+		padding: 20px 10px
+		background: black
+		cp()
+		opacity: .6
+		&:hover
+			opacity: 1
+			.icon
+				fill white
+		.icon
+			fill white
+			size 24px
+	.slider-control--left
+		left 0
+	.slider-control--right
+		right 0
+//Навигация снаружи end
+.slick-dots
+	+below(720px)
+		bottom -40px
+	width: 100%
+	display: flex !important
+	align-items: center
+	justify-content: center
+	bottom -50px
+	li
+		+below(720px)
+			flex(mid)
+	.dot
+		+below(720px)
+			flex(mid)
+			size 16px
+		background: $red
+		size 20px
+		display: block
+		round()
+		opacity: .5
+	.slick-active
+		.dot
+			opacity: 1
+.slick-dotted.slick-slider
+	+below(768px)
+		margin-bottom: 60px
+	margin-bottom: 90px
+// slick === end
+
+@keyframes shake
+	from,5%,to
+		transform: translate3d(0, 0, 0);
+	10%
+		transform: skewX(-12.5deg) skewY(-12.5deg);
+	15%
+		transform: skewX(6.25deg) skewY(6.25deg);
+	20%
+		transform: skewX(-3.125deg) skewY(-3.125deg);
+	26%
+		transform: skewX(1.5625deg) skewY(1.5625deg);
+	33%
+		transform: skewX(-0.78125deg) skewY(-0.78125deg);
+	37%
+		transform: skewX(0.390625deg) skewY(0.390625deg);
+	44%
+		transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+
+
+.shake
+	animation: shake 1.2s cubic-bezier(.36,.07,.19,.97) both
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;

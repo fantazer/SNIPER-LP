@@ -210,6 +210,39 @@ $(document).ready(function () {
 	});
 	//bubble===end
 
+	$('.slider-item').slick({
+		slidesToShow: 1,
+		speed: 500,
+		dots:true,
+		arrows:false,
+		rows:0,// убирает вложенный пустой div
+		//autoplay: true,
+		//fade: true
+		//autoplaySpeed: 8000, time between
+		customPaging : function(slider, i) {
+			return '<span class="dot"></span>';
+		}
+	});
+	// === custom arrow el ===
+	$('.slider-control--right').click(function(){
+		$(this).closest(".slider-wrap").find(".slider-item").slick('slickNext');
+	});
+
+	$('.slider-control--left').click(function(){
+		$(this).closest(".slider-wrap").find(".slider-item").slick('slickPrev');
+	});
+	// custom arrow el === end
+
+	// toggle option slider el
+	$('.option-col-head').click(function(){
+		$(this).toggleClass('active');
+		$(this).closest('.option-col').find('.option-descr').slideToggle();
+	});
+	// toggle option slider el === end
+
+
+
+
 	//window.condition = {};
 	//window.condition.info = info;
 });

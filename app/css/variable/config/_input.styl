@@ -4,15 +4,14 @@
 	border 1px solid $border-color
 	resize: none
 	outline: 0 !important
-	border-radius 4px
+	br(10px)
 	font-family $v-font
 	display block!important
 	placeholder(#888888)
-	background: #f6f6f6
 	tr(all)
 	line-height: 1.6
 	&:focus
-		border 1px solid $mark
+		border 1px solid black
 		background: white
 
 .input--disable
@@ -98,7 +97,7 @@
 
 //form
 .input-row
-	margin-bottom: 20px
+	margin-bottom: 10px
 	.input
 		width: 100%
 .input-row__title
@@ -147,14 +146,14 @@
 		+below(768px)
 			align-items: flex-start
 	.style-input-text
-		font-size: 14px
+		font-size: 12px
 		color black
-		width: calc(100% - 80px)
+		width: calc(100% - 60px)
 		line-height: 1.6
 		margin-top: 3px
 		a
 			color $mark
-	margin-bottom: 20px
+	margin: 15px 0
 
 .input-get
 	f()

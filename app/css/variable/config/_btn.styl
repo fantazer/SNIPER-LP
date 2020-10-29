@@ -23,11 +23,15 @@
 	letter-spacing:.5px
 
 .btn--lg
+	+below(640px)
+		padding: 15px
 	@extend .btn
-	padding 15px 55px
+	padding 18px 75px
 	letter-spacing:.5px
 
 .btn--xl
+	+below(640px)
+		padding: 15px
 	@extend .btn
 	@extend .type--lg
 	padding 15px 80px
