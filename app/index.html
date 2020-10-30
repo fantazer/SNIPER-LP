@@ -19,62 +19,1070 @@
     <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower/aos/dist/aos.css" />
     <!--endbuild-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-edit.css" />
 </head>
 
 <body>
-    <style type="text/css">
-        .all-page__el {
-        		padding: 5px;
-        		box-shadow: 0px 3px 8px #e3e3e3;
-        		border-radius: 10px;
-        	}
-        	
-        	.all-page__el:hover {
-        		box-shadow: 0px 3px 3px #e3e3e3;
-        		transition: box-shadow 0.8s;
-        	}
-        	
-        	.all-page__el:hover:hover {
-        		box-shadow: 0 18px 32px #e3e3e3;
-        	}
-        	
-        	.all-page {
-        		display: grid;
-        		grid-gap: 20px;
-        		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-        		margin-bottom: 30px;
-        	}
-        	
-        	.all-page__title {
-        		text-align: center;
-        		padding: 10px;
-        		font-size: 16px;
-        		color: #000;
-        	}
-    </style>
-    <div class="main-cont">
-        <h1>Список страниц</h1>
-        <div class="all-page">
-            <a class="all-page__el" href="elements.html">
-                <img src="img/screen/app/elements.png" alt="" />
-                <div class="all-page__info">
-                    <div class="all-page__title">Элементы</div>
+    <div class="page">
+        <!--block header-->
+        <!--block header end-->
+        <div class="content">
+            <div class="main-section" style="background-image:url('img/bg-mainsection.png')">
+                <div class="header-wrap">
+                    <div class="main-cont">
+                        <div class="header" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+                            <a class="logo" href="/">
+                                <img src="img/logo.png" alt="" />
+                            </a>
+                            <a class="header__phone" href="tel:8 000 000 00 00">
+                                <svg class="icon">
+                                    <use xlink:href="#call"></use>
+                                </svg>
+                                <span>8 000 000 00 00</span>
+                            </a>
+                            <div class="soc-row soc-row--white">
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-telegram"></use>
+                                    </svg>
+                                </a>
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal-get btn--md btn--yellow header-get" data-modal="order">Получить консультацию</div>
+                        </div>
+                    </div>
                 </div>
-            </a>
-            <a class="all-page__el" href="main.html">
-                <img src="img/screen/app/main.png" alt="" />
-                <div class="all-page__info">
-                    <div class="all-page__title">Главная</div>
+                <div class="main-cont main-cont--full">
+                    <div class="slogan-wrap">
+                        <div class="slogan" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
+                            <div class="slogan__title">Скидка до
+                                <div class="slogan__title-cost">35000
+                                    <span>рублей</span>
+                                </div>ежемесячно
+                            </div>
+                            <div class="slogan__text">на комплексное продвижение.</div>
+                            <div class="modal-get btn--md btn--yellow slogan__btn" data-modal="order">Получить консультацию</div>
+                        </div>
+                    </div>
                 </div>
-            </a>
+            </div>
+            <div class="section-work" style="background-image:url('img/bg-triangle.png')">
+                <div class="main-cont">
+                    <div class="work-head">
+                        <div class="work-head__title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Работаем по технологии комплексного продвижения craft MARKETING</div>
+                        <div class="work-head__get" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
+                            <div class="soc-row">
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-telegram"></use>
+                                    </svg>
+                                </a>
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="modal-get btn--md btn--mark btn--mobile" data-modal="order">Онлайн консультация</div>
+                        </div>
+                    </div>
+                    <div class="work-cont" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="work-cont__info">Знаем текущую потребность бизнеса, разработаем стратегию для достижения результата.</div>
+                    </div>
+                    <div class="work-advant">
+                        <div class="work-advant__el" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <svg class="icon">
+                                <use xlink:href="#money"></use>
+                            </svg>
+                            <div class="work-advant__el-info">
+                                <b>Меньше</b>
+                                <span>тратьте</span>
+                            </div>
+                        </div>
+                        <div class="work-advant__el" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <svg class="icon">
+                                <use xlink:href="#grow"></use>
+                            </svg>
+                            <div class="work-advant__el-info">
+                                <b>Больше</b>
+                                <span>зарабатывайте</span>
+                            </div>
+                        </div>
+                        <div class="work-advant__el" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                            <svg class="icon">
+                                <use xlink:href="#map"></use>
+                            </svg>
+                            <div class="work-advant__el-info">
+                                <b>Масштабируйте</b>
+                                <span>свой бизнес</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-process">
+                <div class="main-cont">
+                    <div class="process-head" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="process__title">Как мы работаем</div>
+                        <div class="process-get">
+                            <div class="modal-get btn--md btn--mark btn--mobile" data-modal="order">Хочу стратегию</div>
+                            <div class="soc-row">
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-telegram"></use>
+                                    </svg>
+                                </a>
+                                <a class="soc-row__el" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#soc-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-img" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <img src="img/arrow-number.png" alt="" />
+                    </div>
+                    <div class="process">
+                        <div class="process__col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="process__col-title">
+                                <div class="process__col-title-numb">
+                                    <img src="img/number-1.png" alt="" />
+                                </div>
+                                <div class="process__col-title-text">Разработка стратегии</div>
+                            </div>
+                            <div class="process__col-info">
+                                <ul>
+                                    <li>Определение целей и задач</li>
+                                    <li>Оценка рынка и конкурентов</li>
+                                    <li>Оценка интеграций</li>
+                                    <li>Аудит контекстной рекламы, SEO, SMM, репутации</li>
+                                    <li>Веб‑аналитика - метрики, цели, юзабилити</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="process__col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="process__col-title">
+                                <div class="process__col-title-numb">
+                                    <img src="img/number-2.png" alt="" />
+                                </div>
+                                <div class="process__col-title-text">Горячий и отложенный спрос</div>
+                            </div>
+                            <div class="process__col-info">
+                                <ul>
+                                    <li>Контекстная реклама</li>
+                                    <li>Таргетированная реклама</li>
+                                    <li>Таргетированная реклама в социальных сетях</li>
+                                    <li>Яндекс.Маркет и Google Покупки</li>
+                                    <li>Поисковое продвижение</li>
+                                    <li>Smart targeting - пол, возраст, ГЕО, доход, интерес</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="process__col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <div class="process__col-title">
+                                <div class="process__col-title-numb">
+                                    <img src="img/number-3.png" alt="" />
+                                </div>
+                                <div class="process__col-title-text">Принятие решения о покупке</div>
+                            </div>
+                            <div class="process__col-info">
+                                <ul>
+                                    <li>Ретаргетинг</li>
+                                    <li>Ремаркетинг</li>
+                                    <li>Управление репутацией</li>
+                                    <li>Интернет Брендинг</li>
+                                    <li>Наличие и доставка</li>
+                                    <li>Онлайн оплата</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="process__col" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                            <div class="process__col-title">
+                                <div class="process__col-title-numb">
+                                    <img src="img/number-4.png" alt="" />
+                                </div>
+                                <div class="process__col-title-text">Повторные покупки</div>
+                            </div>
+                            <div class="process__col-info">
+                                <ul>
+                                    <li>Ведение соц.сетей</li>
+                                    <li>СМС рассылка</li>
+                                    <li>CRM маркетинг</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="process__col" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                            <div class="process__col-title">
+                                <div class="process__col-title-numb">
+                                    <img src="img/number-5.png" alt="" />
+                                </div>
+                                <div class="process__col-title-text">Отдел продаж</div>
+                            </div>
+                            <div class="process__col-info">
+                                <ul>
+                                    <li>Ведение соц.сетей</li>
+                                    <li>СМС рассылка</li>
+                                    <li>CRM маркетинг</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="section section--gray">
+            <div class="main-cont">
+                <div class="section-title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Технологии</div>
+                <div class="grid" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-cost">
+            <div class="main-cont">
+                <div class="section-title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Комплексы сопровождения</div>
+                <div class="cost">
+                    <div class="cost__col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <div class="cost__col-head">
+                            <div class="cost__col-head-bg" style="background-image:url('img/cost-bg-1.png')"></div>
+                            <div class="cost__col-title-false">50 000
+                                <span>руб.</span>
+                            </div>
+                            <div class="cost__col-title-true">35 000
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        <div class="cost-info">
+                            <div class="cost-list">
+                                <div class="cost-list__el">Стратегия и аналитика</div>
+                                <div class="cost-list__el">Контекстная реклама</div>
+                                <div class="cost-list__el">Базовая SEO оптимизация</div>
+                                <div class="cost-list__el">Таргет. соц. сети</div>
+                                <div class="cost-list__el">Ведение соц. сетей</div>
+                                <div class="cost-list__el">Тех. поддержка</div>
+                            </div>
+                            <div class="cost-get">
+                                <div class="modal-get btn--md btn--mark btn--full" data-modal="order">Заказать</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost__col" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                        <div class="cost__col-head">
+                            <div class="cost__col-head-bg" style="background-image:url('img/cost-bg-2.png')"></div>
+                            <div class="cost__col-title-false">80 000
+                                <span>руб.</span>
+                            </div>
+                            <div class="cost__col-title-true">56 000
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        <div class="cost-info">
+                            <div class="cost-list">
+                                <div class="cost-list__el">Стратегия и аналитика</div>
+                                <div class="cost-list__el">Контекстная реклама</div>
+                                <div class="cost-list__el">SEO продвижение</div>
+                                <div class="cost-list__el">Таргет. Соц. сети</div>
+                                <div class="cost-list__el">Ведение соц. сетей</div>
+                                <div class="cost-list__el">Коллтрекинг, CRM,</div>
+                                <div class="cost-list__el">Удаление негативных</div>
+                                <div class="cost-list__el">отзывов</div>
+                                <div class="cost-list__el">Тех. поддержка</div>
+                                <div class="cost-list__el">Тех. поддержка</div>
+                            </div>
+                            <div class="cost-get">
+                                <div class="modal-get btn--md btn--mark btn--full" data-modal="order">Заказать</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost__col" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
+                        <div class="cost__col-head">
+                            <div class="cost__col-head-bg" style="background-image:url('img/cost-bg-3.png')"></div>
+                            <div class="cost__col-title-false">120 000
+                                <span>руб.</span>
+                            </div>
+                            <div class="cost__col-title-true">85 000
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        <div class="cost-info">
+                            <div class="cost-list">
+                                <div class="cost-list__el">Стратегия и аналитика</div>
+                                <div class="cost-list__el">Контекстная реклама</div>
+                                <div class="cost-list__el">SEO продвижение</div>
+                                <div class="cost-list__el">Таргет. Соц. сети</div>
+                                <div class="cost-list__el">Ведение соц сетей</div>
+                                <div class="cost-list__el">Ретаргетинг</div>
+                                <div class="cost-list__el">Ремаркетинг</div>
+                                <div class="cost-list__el">Интернет Брендинг</div>
+                                <div class="cost-list__el">Управление репутацией</div>
+                                <div class="cost-list__el">Коллтрекинг</div>
+                                <div class="cost-list__el">CRM маркетинг</div>
+                                <div class="cost-list__el">СМС рассылка</div>
+                                <div class="cost-list__el">Наличие и доставка</div>
+                                <div class="cost-list__el">Онлайн оплата</div>
+                                <div class="cost-list__el">Тайный покупатель</div>
+                                <div class="cost-list__el">Тех. поддержка</div>
+                            </div>
+                            <div class="cost-get">
+                                <div class="modal-get btn--md btn--mark btn--full" data-modal="order">Заказать</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--gray">
+            <div class="main-cont">
+                <div class="section-title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Разработка HCR (High Conversion Rate)</div>
+                <div class="develop">
+                    <div class="develop__el" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="develop__el-title">Интернет магазинов</div>
+                        <img class="develop__el-img" src="img/develop-1.svg" alt="" />
+                    </div>
+                    <div class="develop__el" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                        <div class="develop__el-title">Посадочных страниц</div>
+                        <img class="develop__el-img" src="img/develop-2.svg" alt="" />
+                    </div>
+                    <div class="develop__el" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                        <div class="develop__el-title">Лэндингов</div>
+                        <img class="develop__el-img" src="img/develop-3.svg" alt="" />
+                    </div>
+                </div>
+                <div class="develop-img" style="background-image:url('img/develop-banner.jpg')" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"></div>
+                <div class="btn-row-mid" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="modal-get btn--lg btn--mark btn--mobile" data-modal="order">Узнать стоимость</div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="main-cont">
+                <div class="section-title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Нам доверяют</div>
+                <div class="grid grid--mark" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-1.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-2.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-3.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-4.jpg')"></div>
+                    </div>
+                    <div class="grid__el">
+                        <div class="grid__el-img" style="background-image:url('img/tech-5.jpg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--gray">
+            <div class="main-cont">
+                <div class="section-title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Кейсы</div>
+                <div class="slider-wrap slider-wrap--simple" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="slider-control slider-control--left">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-conner-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-control slider-control--right">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-conner-right"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-el-wrap">
+                            <div class="slider-el">
+                                <div class="option">
+                                    <div class="option__header" style="background-image:url('img/triange-bg.png')">
+                                        <div class="option__img">
+                                            <img src="img/option-1.png" alt="" />
+                                        </div>
+                                        <div class="option__title">Компания по продаже женского белья для беременных и кормящих мам</div>
+                                    </div>
+                                    <div class="option-wrap">
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Инструменты
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">SEO</div>
+                                                    <div class="list__el">Яндекс.Директ</div>
+                                                    <div class="list__el">Google Ads</div>
+                                                    <div class="list__el">SMM</div>
+                                                    <div class="list__el">МойСклад</div>
+                                                    <div class="list__el">СДЭК</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Ниша
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <p>Женское нижнее белье</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                    <div class="list__el">
+                                                        <b>Стоимость лида:</b>300 рублей.</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество привлеченных лидов:</b>+627</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество лидов в месяц:</b>+105</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-footer">Разработали интернет-магазин, запустили
+                                        <br>комплексное продвижение, снизили стоимость лида до 300 РУБ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el-wrap">
+                            <div class="slider-el">
+                                <div class="option">
+                                    <div class="option__header" style="background-image:url('img/triange-bg.png')">
+                                        <div class="option__img">
+                                            <img src="img/option-1.png" alt="" />
+                                        </div>
+                                        <div class="option__title">Компания по продаже женского белья для беременных и кормящих мам</div>
+                                    </div>
+                                    <div class="option-wrap">
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Инструменты
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">SEO</div>
+                                                    <div class="list__el">Яндекс.Директ</div>
+                                                    <div class="list__el">Google Ads</div>
+                                                    <div class="list__el">SMM</div>
+                                                    <div class="list__el">МойСклад</div>
+                                                    <div class="list__el">СДЭК</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Ниша
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <p>Женское нижнее белье</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                    <div class="list__el">
+                                                        <b>Стоимость лида:</b>300 рублей.</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество привлеченных лидов:</b>+627</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество лидов в месяц:</b>+105</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-footer">Разработали интернет-магазин, запустили
+                                        <br>комплексное продвижение, снизили стоимость лида до 300 РУБ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el-wrap">
+                            <div class="slider-el">
+                                <div class="option">
+                                    <div class="option__header" style="background-image:url('img/triange-bg.png')">
+                                        <div class="option__img">
+                                            <img src="img/option-1.png" alt="" />
+                                        </div>
+                                        <div class="option__title">Компания по продаже женского белья для беременных и кормящих мам</div>
+                                    </div>
+                                    <div class="option-wrap">
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Инструменты
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">SEO</div>
+                                                    <div class="list__el">Яндекс.Директ</div>
+                                                    <div class="list__el">Google Ads</div>
+                                                    <div class="list__el">SMM</div>
+                                                    <div class="list__el">МойСклад</div>
+                                                    <div class="list__el">СДЭК</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Ниша
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <p>Женское нижнее белье</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                    <div class="list__el">
+                                                        <b>Стоимость лида:</b>300 рублей.</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество привлеченных лидов:</b>+627</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество лидов в месяц:</b>+105</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-footer">Разработали интернет-магазин, запустили
+                                        <br>комплексное продвижение, снизили стоимость лида до 300 РУБ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el-wrap">
+                            <div class="slider-el">
+                                <div class="option">
+                                    <div class="option__header" style="background-image:url('img/triange-bg.png')">
+                                        <div class="option__img">
+                                            <img src="img/option-1.png" alt="" />
+                                        </div>
+                                        <div class="option__title">Компания по продаже женского белья для беременных и кормящих мам</div>
+                                    </div>
+                                    <div class="option-wrap">
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Инструменты
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">SEO</div>
+                                                    <div class="list__el">Яндекс.Директ</div>
+                                                    <div class="list__el">Google Ads</div>
+                                                    <div class="list__el">SMM</div>
+                                                    <div class="list__el">МойСклад</div>
+                                                    <div class="list__el">СДЭК</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Ниша
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <p>Женское нижнее белье</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                    <div class="list__el">
+                                                        <b>Стоимость лида:</b>300 рублей.</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество привлеченных лидов:</b>+627</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество лидов в месяц:</b>+105</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-footer">Разработали интернет-магазин, запустили
+                                        <br>комплексное продвижение, снизили стоимость лида до 300 РУБ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el-wrap">
+                            <div class="slider-el">
+                                <div class="option">
+                                    <div class="option__header" style="background-image:url('img/triange-bg.png')">
+                                        <div class="option__img">
+                                            <img src="img/option-1.png" alt="" />
+                                        </div>
+                                        <div class="option__title">Компания по продаже женского белья для беременных и кормящих мам</div>
+                                    </div>
+                                    <div class="option-wrap">
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Инструменты
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">SEO</div>
+                                                    <div class="list__el">Яндекс.Директ</div>
+                                                    <div class="list__el">Google Ads</div>
+                                                    <div class="list__el">SMM</div>
+                                                    <div class="list__el">МойСклад</div>
+                                                    <div class="list__el">СДЭК</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Ниша
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <p>Женское нижнее белье</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option-col">
+                                            <div class="option-col-head">
+                                                <div class="option-col__title">Что сделали
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="option-descr">
+                                                <div class="list">
+                                                    <div class="list__el">Разработали интернет-магазин</div>
+                                                    <div class="list__el">Запустили комплексное продвижение</div>
+                                                    <div class="list__el">
+                                                        <b>Стоимость лида:</b>300 рублей.</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество привлеченных лидов:</b>+627</div>
+                                                    <div class="list__el">
+                                                        <b>Колличество лидов в месяц:</b>+105</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="option-footer">Разработали интернет-магазин, запустили
+                                        <br>комплексное продвижение, снизили стоимость лида до 300 РУБ.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-row-mid" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="modal-get btn--lg btn--yellow btn--mobile" data-modal="order">Хочу так же</div>
+                </div>
+            </div>
+        </div>
+        <div class="section-marketing" style="background-image:url('img/marketing-bg.png')">
+            <div class="main-cont">
+                <div class="marketing-wrap">
+                    <div class="marketing-title" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+                        <div data-modal="order">Чек-лист для самостоятельной маркетинг-ревизии</div>
+                    </div>
+                    <div class="marketing-text" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+                        <div data-modal="order">Как самостоятельно провести базовую
+                            <br>маркетинг-ревизию вашего бизнеса?</div>
+                    </div>
+                    <div class="modal-get btn--xl btn--mark btn--shadow btn--mobile" data-modal="download" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Скачать</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="main-cont">
+                <div class="footer-wrap" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="modal-get footer-logo" data-modal="true">
+                        <img src="img/logo-color.png" alt="" />
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-title">Наши контакты</div>
+                        <div class="footer-descr">
+                            <strong>
+                                <a href="tel:8 000 000 00 00">8 000 000 00 00</a>
+                            </strong>- Позвонить, узнать как дела.</div>
+                        <div class="footer-descr">
+                            <strong>г.Новосибирск, ул. Челюскинцев, 36/1, оф. 501</strong>- Приехать и познакомиться.</div>
+                        <div class="footer-descr">
+                            <strong>Email:</strong>-
+                            <b>
+                                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            </b>.</div>
+                    </div>
+                    <div class="soc-row">
+                        <a class="soc-row__el" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#soc-telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="soc-row__el" href="#">
+                            <svg class="icon">
+                                <use xlink:href="#soc-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-layer">
+            <div class="modal-filter"></div>
+            <div class="modal-wrap">
+                <div class="modal" data-modal="order">
+                    <div class="modal-content">
+                        <div class="modal-close">
+                            <svg class="icon">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-title">Оставьте заявку</div>
+                        <!--.modal-text Обращаетесь к нам впервые? Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!-->
+                        <form class="validate-form" action="javascript:void(null);">
+                            <div class="input-cont">
+                                <div class="input-row">
+                                    <div class="input-row__title"></div>
+                                    <input class="input" type="text" placeholder="Ваше имя" />
+                                </div>
+                            </div>
+                            <div class="input-cont">
+                                <div class="input-row">
+                                    <div class="input-row__title"></div>
+                                    <input class="input" type="text" placeholder="Телефон" />
+                                </div>
+                            </div>
+                            <div class="login-remember">
+                                <div class="check-el">
+                                    <label class="style-label style-label--checkbox">
+                                        <input class="style-input" type="checkbox" />
+                                        <div class="style-input-element">
+                                            <svg class="icon">
+                                                <use xlink:href="#checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="style-input-text">Я ознакомился с и даю согласие на обработку моих персональных данных</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <input class="modal-send" type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+                <div class="modal" data-modal="download">
+                    <div class="modal-content">
+                        <div class="modal-close">
+                            <svg class="icon">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-title">Хочу чек-лист</div>
+                        <div class="modal-text">Оставьте Ваш email и мы пришлем Вам чек-лист для самостоятельной маркетинг-ревизии</div>
+                        <form class="validate-form" action="javascript:void(null);">
+                            <div class="input-cont">
+                                <div class="input-row">
+                                    <div class="input-row__title"></div>
+                                    <input class="input" type="text" placeholder="Ваша почта" />
+                                </div>
+                            </div>
+                            <div class="login-remember">
+                                <div class="check-el">
+                                    <label class="style-label style-label--checkbox">
+                                        <input class="style-input" type="checkbox" />
+                                        <div class="style-input-element">
+                                            <svg class="icon">
+                                                <use xlink:href="#checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="style-input-text">Я ознакомился с и даю согласие на обработку моих персональных данных</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <input class="modal-send" type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+                <!--success message-->
+                <div class="modal" data-modal="true">
+                    <div class="modal-content modal-content--true">
+                        <div class="modal-close">
+                            <svg class="icon">
+                                <use xlink:href="#close-fat"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-img">
+                            <img src="img/target.svg" alt="" />
+                        </div>
+                        <div class="modal-title">Сообщение отправленно</div>
+                        <div class="modal-text">Спасибо Вам. Мы свяжемся с Вами в ближайшее время</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block footer-->
+        <!--block footer end-->
     </div>
     <!--build:js ./js/combined.js-->
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="bower/slick-carousel/slick/slick.js"></script>
+    <script src="bower/aos/dist/aos.js"></script>
     <!-- endbuild-->
     <script src="./js/add-on.js"></script>
     <script src="./js/script.js"></script>

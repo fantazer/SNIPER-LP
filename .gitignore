@@ -5,5 +5,3 @@ dist/img/dist/
 ftp.json
 zip/
 
-# Project exclude paths
-/dist/
