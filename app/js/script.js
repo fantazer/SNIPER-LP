@@ -250,8 +250,6 @@ $(document).ready(function () {
 			$slider.find('.slick-list').css('height', stHeight);
 			$slider.find('.slick-current').css('height', 'auto');
 		});
-
-
 	});
 	// toggle option slider el === end
 

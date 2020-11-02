@@ -1102,7 +1102,7 @@ body {
   position: fixed !important;
   top: 0;
   left: 0;
-  background: #ff1c26;
+  background: #810000;
   width: 100%;
   margin: 0;
   -webkit-animation: slideInDown 1s 1 ease-in-out;
@@ -1748,7 +1748,8 @@ body {
   .work-head__get .btn--md {
     width: 100%;
     margin: 20px 0;
-    border: 1px solid #d8d8d8;
+    background: #ffe450;
+    color: #111;
   }
 }
 .work-cont {

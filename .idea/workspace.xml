@@ -10,25 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="predeploy version">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="deploy version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_style.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_style.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-404.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-500.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +178,9 @@
       <workItem from="1603535698872" duration="2547000" />
       <workItem from="1603879939713" duration="20960000" />
       <workItem from="1603960255895" duration="24640000" />
-      <workItem from="1604049557276" duration="3177000" />
-    </task>
-    <task id="LOCAL-00003" summary="add modal + slick + some fixes">
-      <created>1538413870583</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1538413870583</updated>
+      <workItem from="1604049557276" duration="4435000" />
+      <workItem from="1604221075122" duration="809000" />
+      <workItem from="1604324907645" duration="166000" />
     </task>
     <task id="LOCAL-00004" summary="add readme">
       <created>1539196292222</created>
@@ -537,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603987854327</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="deploy version">
+      <created>1604052848404</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604052848405</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -578,7 +566,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix input style" />
     <MESSAGE value="add full page template" />
     <MESSAGE value="add mixin link" />
     <MESSAGE value="fix slide menu" />
@@ -603,7 +590,8 @@
     <MESSAGE value="fix favicon" />
     <MESSAGE value="add cookie msg" />
     <MESSAGE value="predeploy version" />
-    <option name="LAST_COMMIT_MESSAGE" value="predeploy version" />
+    <MESSAGE value="deploy version" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1532" y="312" key="#Images" timestamp="1603970142302">
@@ -618,10 +606,10 @@
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
     <state x="-1511" y="344" key="#com.intellij.tools.ToolEditorDialog/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1603969962645" />
-    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1604052814558">
+    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1604052845427">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604052814558" />
+    <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604052845427" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1602233651659" />
     <state x="-1501" y="248" key="FileChooserDialogImpl" timestamp="1603970141414">
       <screen x="-2560" y="-193" width="2560" height="1400" />
@@ -641,10 +629,10 @@
     <state x="-1779" y="150" key="SettingsEditor/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1603970075868" />
     <state x="-1779" y="150" key="SettingsEditor/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1603915175949" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1599741730816" />
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603987856700">
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1604052876480">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1603987856700" />
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604052876480" />
     <state x="-1959" y="65" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1600361287895" />
     <state x="-1661" y="153" width="763" height="710" key="find.popup" timestamp="1603986425003">
       <screen x="-2560" y="-193" width="2560" height="1400" />
